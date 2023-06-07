@@ -169,14 +169,20 @@
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
 					document.getElementById("popup-image").style.display = "block";
-					lightbox.option({
+					var lightboxInstance = lightbox.option({
 						showImageNumberLabel: false,
 						onClosed: function() {
 							document.getElementById("popup-image").style.display = "none";
 						}
 					});
+			
+					// Add an event listener to close the lightbox when the image is clicked
+					document.getElementById("popup-image").addEventListener("click", function() {
+						lightboxInstance.close();
+					});
 				});
 			</script>
+			
 			
 			
 
