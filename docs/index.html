@@ -170,10 +170,14 @@
 				document.addEventListener("DOMContentLoaded", function() {
 					document.getElementById("popup-image").style.display = "block";
 					lightbox.option({
-						showImageNumberLabel: false
+						showImageNumberLabel: false,
+						onClosed: function() {
+							document.getElementById("popup-image").style.display = "none";
+						}
 					});
 				});
 			</script>
+			
 			
 
 	</body>
