@@ -46,7 +46,7 @@
 			</nav>
 		<!-- Popup Image -->
 			<div id="popup-image" style="display: none;">
-				<a href="images/ipo_copenhagen.jpg" data-lightbox="image">
+				<a href="shows.html" data-lightbox="image">
 					<img src="images/ipo_copenhagen.jpg" alt="Popup Image" />
 				</a>
 			</div>
@@ -169,19 +169,22 @@
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
 					document.getElementById("popup-image").style.display = "block";
-					var lightboxInstance = lightbox.option({
-						showImageNumberLabel: false,
-						onClosed: function() {
-							document.getElementById("popup-image").style.display = "none";
-						}
-					});
 			
-					// Add an event listener to close the lightbox when the image is clicked
-					document.getElementById("popup-image").addEventListener("click", function() {
-						lightboxInstance.close();
+					var lightboxTrigger = document.querySelector("#popup-image a");
+					lightboxTrigger.setAttribute("data-lightbox", "image");
+					lightboxTrigger.setAttribute("data-title", "Popup Image");
+			
+					lightbox.init();
+			
+					lightboxTrigger.addEventListener("click", function(event) {
+						event.preventDefault();
+						lightbox.start(lightboxTrigger);
+						lightbox.end();
 					});
 				});
 			</script>
+			
+			
 			
 			
 			
