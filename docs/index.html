@@ -13,6 +13,9 @@
 		<meta name="keywords" content="music, ronnie starr, helsinki, ronniestarr, band, first take, rock, pop, indie">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="assets/lightbox/css/lightbox.min.css" />
+		<script src="assets/lightbox/js/lightbox.min.js"></script>
+
 	</head>
 	<body>
 
@@ -41,6 +44,13 @@
                                         </ul>
 
 			</nav>
+		<!-- Popup Image -->
+			<div id="popup-image" style="display: none;">
+				<a href="images/ipo_copenhagen.jpg" data-lightbox="image">
+					<img src="images/ipo_copenhagen.jpg" alt="Popup Image" />
+				</a>
+			</div>
+			
 
 		<!-- Banner -->
 		<!--
@@ -155,6 +165,16 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					document.getElementById("popup-image").style.display = "block";
+					lightbox.option({
+						showImageNumberLabel: false
+					});
+				});
+			</script>
+			
 
 	</body>
 </html>
