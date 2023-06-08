@@ -33,15 +33,19 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 70%;
-        max-height: 70%;
+        max-width: 75%;
+        max-height: 75%;
     }
 
     #popup-image img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 60%;
+        max-height: 60%;
         border: none;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
     }
 </style>
 
@@ -76,7 +80,7 @@
 		<!-- Popup Image -->
 			<div id="popup-image" style="display: none;">
 				<a href="shows.html" data-lightbox="image">
-					<img src="images/ipo_copenhagen.jpg" alt="IPO Copenhagen" />
+					<img src="images/ipo_copenhagen.jpg" class="responsive" alt="IPO Copenhagen" />
 				</a>
 			</div>
 			
