@@ -14,40 +14,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
 		<link rel="stylesheet" href="assets/lightbox/css/lightbox.min.css" />
-		<script src="assets/lightbox/js/lightbox.min.js"></script>
-<style>
-    #popup-image {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        text-align: center;
-    }
-
-    #popup-image a {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 80%;
-        max-height: 80%;
-    }
-
-    #popup-image img {
-        max-width: 100%;
-        max-height: 100%;
-        border: none;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
-    .responsive {
-        width: 100%;
-        height: auto;
-    }
-</style>
 
 	</head>
 	<body>
@@ -67,30 +33,17 @@
 					<li><a href="video.html">Videos</a></li>
                     <li><a href="music.html">Music</a></li>
                     <li><a href="history.html">History</a></li>
+					<li><a href="media.html">Media</a></li>
 				</ul>
 				<ul class="icons">
-                                                <li><a href="https://twitter.com/RonnieStarrBand" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
-                                                <li><a href="https://www.facebook.com/ronniestarrmusic/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-                                                <li><a href="https://www.instagram.com/ronniestarrofficial/" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
-                        			<li><a href="https://www.youtube.com/channel/UCUg3xOdJWVyBZEkeVbj7ESA" class="icon round fa-youtube"><span class="label">Youtube</span></a></li>
-                        			<li><a href="https://open.spotify.com/album/5vHrS7w2oRwGESvq6FPlma" class="icon round fa-spotify"><span class="label">Spotify</span></a></li>
-                                        </ul>
+                    <li><a href="https://twitter.com/RonnieStarrBand" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/ronniestarrmusic/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/ronniestarrofficial/" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCUg3xOdJWVyBZEkeVbj7ESA" class="icon round fa-youtube"><span class="label">Youtube</span></a></li>
+                    <li><a href="https://open.spotify.com/album/5vHrS7w2oRwGESvq6FPlma" class="icon round fa-spotify"><span class="label">Spotify</span></a></li>
+                </ul>
 
 			</nav>
-		<!-- Popup Image 
-			<div id="popup-image" style="display: none;">
-				<a href="shows.html" data-lightbox="image">
-					<img src="images/ipo_copenhagen.jpg" class="responsive" alt="IPO Copenhagen" />
-				</a>
-			</div>
-		-->	
-
-		<!-- Banner -->
-		<!--
-			Note: To show a background image, set the "data-bg" attribute below
-			to the full filename of your image. This is used in each section to set
-			the background image.
-		-->
 			<section id="banner" class="bg-img" data-bg="banner.jpg">
 				<div class="inner">
 					<header>
@@ -198,29 +151,5 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<!-- 
-			<script>
-				document.addEventListener("DOMContentLoaded", function() {
-					document.getElementById("popup-image").style.display = "block";
-			
-					var lightboxTrigger = document.querySelector("#popup-image a");
-					lightboxTrigger.setAttribute("data-lightbox", "image");
-					lightboxTrigger.setAttribute("data-title", "Popup Image");
-			
-					lightbox.init();
-			
-					lightboxTrigger.addEventListener("click", function(event) {
-						event.preventDefault();
-						lightbox.start(lightboxTrigger);
-						lightbox.end();
-					});
-				});
-			</script>
-		-->		
-			
-			
-			
-			
-
 	</body>
 </html>
